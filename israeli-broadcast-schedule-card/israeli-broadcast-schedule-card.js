@@ -18,7 +18,7 @@ class israeliBroadcastScheduleCard extends HTMLElement {
         if (root.lastChild) root.removeChild(root.lastChild);
         const card = document.createElement('ha-card');
         const style = document.createElement('style');
-        let content = document.createElement('div');
+        const content = document.createElement('div');
         const title = document.createElement("div");
         title.className = "header";
         title.style = "font-family: var(--paper-font-headline_-_font-family); -webkit-font-smoothing: var(--paper-font-headline_-_-webkit-font-smoothing); font-size: var(--paper-font-headline_-_font-size); font-weight: var(--paper-font-headline_-_font-weight); letter-spacing: var(--paper-font-headline_-_letter-spacing); line-height: var(--paper-font-headline_-_line-height); line-height: 40px; color: var(--primary-text-color); padding: 4px 0 12px; display: flex; justify-content: space-between;";
@@ -27,6 +27,7 @@ class israeliBroadcastScheduleCard extends HTMLElement {
           ha-card {
             padding: 16px;
             text-align: right;
+            direction: rtl;
           }
           ul {
             list-style-type: none;
@@ -35,16 +36,17 @@ class israeliBroadcastScheduleCard extends HTMLElement {
             overflow: hidden;
            }        
            li a {
-            direction: rtl;
             display: block;
             color: #000;
             text-align: right;
             padding: 2px 0;
             text-decoration: none;
            }
+           .head {
+            font-weight: bold;
+           }
         `;
-
-        content.innerHTML = this._httpGet("https://tv-lovelace.herokuapp.com/index.php?url=" + encodeURIComponent(this._URL(config.channel)));
+        content.innerHTML = "בטעינה...";
 
         card.appendChild(style);
         if (config.title) {
@@ -53,18 +55,41 @@ class israeliBroadcastScheduleCard extends HTMLElement {
         card.appendChild(content);
         root.appendChild(card);
 
+        this._httpGet("https://tv-lovelace.herokuapp.com/index.php?url=" + encodeURIComponent(this._URL(config.channel)),
+            function () {
+                if (this.readyState === 4 && this.status === 200) {
+                    let result = document.createElement('div');
+                    result.innerHTML = this.responseText;
+
+                    if (config.max) {
+                        let elementList = result.querySelectorAll("li");
+                        for (let i = 0; i < elementList.length; i++) {
+                            if (i > config.max) {
+                                result.firstChild.removeChild(elementList[i]);
+                            }
+                        }
+                    }
+
+                    content.innerHTML = result.innerHTML;
+                }
+
+            });
     }
 
-    _httpGet(theUrl) {
+    _httpGet(theUrl, onreadystatechange) {
         let xmlHttp = new XMLHttpRequest();
-        xmlHttp.open("GET", theUrl, false);
+        xmlHttp.open("GET", theUrl, true);
         xmlHttp.send(null);
-        return xmlHttp.responseText;
+        xmlHttp.onreadystatechange = onreadystatechange
     }
 
 
     _URL(channel) {
-        return `https://www.yes.co.il/content/YesChannelsHandler.ashx?action=GetDailyShowsByDayAndChannelCode&dayValue=0&dayPartByHalfHour=0&channelCode=${channel}`;
+        let now = new Date();
+        let start = new Date();
+        start.setHours(0,0,0);
+        let diff = Math.trunc((now.getTime() - start.getTime()) / 1000 / 60 / 30); // in half hours
+        return `https://www.yes.co.il/content/YesChannelsHandler.ashx?action=GetDailyShowsByDayAndChannelCode&dayValue=0&dayPartByHalfHour=${diff}&channelCode=${channel}`;
     }
 
     getCardSize() {
@@ -72,4 +97,4 @@ class israeliBroadcastScheduleCard extends HTMLElement {
     }
 }
 
-customElements.define('israeli-broadcast-schedule-card',israeliBroadcastScheduleCard);
+customElements.define('israeli-broadcast-schedule-card', israeliBroadcastScheduleCard);
