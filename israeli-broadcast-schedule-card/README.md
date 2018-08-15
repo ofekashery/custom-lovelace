@@ -1,9 +1,8 @@
 # Israeli Broadcast Schedule Card
 Israeli Broadcast Schedule Card allows you to show broadcast schedule for a channel.
-
 #### Please ⭐ this repo if you find it useful
 
-![example](https://user-images.githubusercontent.com/16443111/44116710-f118032c-a019-11e8-840f-e463d70ff607.png)
+<img src="https://user-images.githubusercontent.com/16443111/44153230-58c07428-a0b0-11e8-9c80-e19347bd481a.png" width="500">
 
 
 ## Options
@@ -13,6 +12,7 @@ Israeli Broadcast Schedule Card allows you to show broadcast schedule for a chan
 | type | string | **Required** | `israeli-broadcast-schedule-card`
 | channel | string | **Required** | Channel code from the list below
 | title | string | Optional | Card title
+| max | int | Optional | Max items(Not including the current show)
 
 ## Installation
 
@@ -33,6 +33,7 @@ resources:
 - type: custom:israeli-broadcast-schedule-card
   title: לוח שידורים לערוץ רשת 13
   channel: CH36
+  max: 2
 ```
 
 ## Channels Code
