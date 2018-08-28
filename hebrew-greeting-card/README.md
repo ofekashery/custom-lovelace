@@ -26,7 +26,7 @@
         type: js
     ```
 
-3. Add a channel in your `ui-lovelace.yaml`
+3. Add the card to your `ui-lovelace.yaml`
 
 ## Example
 
