@@ -1,3 +1,6 @@
+## 0.0.3
+- Fixing broken server link
+
 ## 0.0.2
 - Hide programs that have been broadcast
 - Add max shows to display
