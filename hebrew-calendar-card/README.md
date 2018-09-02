@@ -1,4 +1,4 @@
-# Hebrew Calender Card
+# Hebrew Calendar Card
 #### Please ⭐ this repo if you find it useful
 ##### Forked from [rdehuyss/homeassistant-lovelace-google-calendar-card](https://github.com/rdehuyss/homeassistant-lovelace-google-calendar-card)
 
