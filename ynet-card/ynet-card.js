@@ -26,6 +26,9 @@ class ynetCard extends HTMLElement {
             text-align: ${english ? "left" : "right"};
             direction: ${english ? "ltr" : "rtl"};
           }
+          table {
+            background-color: var(--paper-card-background-color);
+          }
           A.tickerTextA:hover {
                 color: #000!important;;
             }
