@@ -51,7 +51,6 @@ Kan 11        | CH30
 Keshet 12     | CH34
 Reshet 13     | CH36
 Reshet 13     | CH36
-Channel 10    | TV04
 yesComedy     | YESP
 yesDrama      | YESU
 yesAction     | YESV
