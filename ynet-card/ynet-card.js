@@ -50,7 +50,7 @@ class ynetCard extends HTMLElement {
 
         let url = "https://www.ynet.co.il/Ext/Comp/Ticker/JS_Ticker_Data/0,13760,L-184,00.html";
         let enUrl = "https://www.ynetnews.com/Ext/Comp/Ticker/JS_Ticker_Data/0,13760,L-3089,00.html";
-        this._httpGet("https://ashery.me/lovelace-cards/index.php?url=" + encodeURIComponent(english ? enUrl : url),
+        this._httpGet("https://cors-anywhere.herokuapp.com/" + (english ? enUrl : url),
             function () {
                 if (this.readyState === 4 && this.status === 200) {
                     let result = document.createElement('div');
