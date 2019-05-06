@@ -68,7 +68,8 @@ class ynetCard extends HTMLElement {
                     }
 
                     for (let i = 0; i < result.querySelectorAll("a").length; i++) {
-                        result.querySelectorAll("a")[i].removeAttribute("href")
+                        result.querySelectorAll("a")[i].removeAttribute("href");
+                        result.querySelectorAll("a")[i].removeAttribute("class");
                     }
 
                     content.innerHTML = result.innerHTML;
