@@ -55,7 +55,7 @@ class israeliBroadcastScheduleCard extends HTMLElement {
         card.appendChild(content);
         root.appendChild(card);
 
-        this._httpGet("https://ashery.me/lovelace-cards/index.php?url=" + encodeURIComponent(this._URL(config.channel)),
+        this._httpGet("https://cors-anywhere.herokuapp.com/" + this._URL(config.channel),
             function () {
                 if (this.readyState === 4 && this.status === 200) {
                     let result = document.createElement('div');
