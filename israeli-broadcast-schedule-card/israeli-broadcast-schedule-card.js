@@ -37,7 +37,7 @@ class israeliBroadcastScheduleCard extends HTMLElement {
            }        
            li a {
             display: block;
-            color: #000;
+            color: var(--primary-text-color);
             text-align: right;
             padding: 2px 0;
             text-decoration: none;
