@@ -65,7 +65,6 @@ resources:
 | CH65       | Humor Channel           |
 | CH80       | Turkish Drama 2         |
 | CH77       | Turkish Drama 3         |
-| CH90       | Mediterranean Plus      |
 | CH72       | Reality Channel         |
 | PT38       | Big Brother             |
 | TV21       | Shopping Channel        |
@@ -73,138 +72,123 @@ resources:
 | CH81       | TV Game Shows           |
 | TV67       | Music 24                |
 | PT72       | Mediterranean Channel   |
-| YESI       | Yes POP UP              |
 | PT28       | Travel Channel          |
 | PT20       | Food Channel            |
+| PT14       | Health Channel          |
 | CN06       | Walla +                 |
-| CN07       | The Pit (Pop Up)        |
-| PT63       | HALA TV                 |
+| PT63       | Hala TV                 |
 | TV09       | LifeStyle               |
 | PT41       | Home and Family         |
 | CH32       | Makan                   |
-| CH89       | Viva Premium            |
 | TV20       | Viva                    |
 | PT60       | Viva Plus               |
 | TV10       | E!                      |
-| CN04       | Mediterranean Channel 2 |
 | CH61       | Design Channel (DIY)    |
-| PT94       | Discovery               |
+| TV18       | Discovery               |
 | PT25       | National G.             |
 | TV62       | Discovery Science       |
-| CH71       | National G. Wild        |
+| PT35       | National G. Wild        |
 | TV19       | History SD              |
-| PT55       | History                 |
-| TV61       | ANIMAL PLANET           |
-| PT13       | DAYSTAR                 |
+| PT55       | History HD              |
+| TV61       | Animal Planet           |
+| PT13       | Daystar                 |
 | CH58       | ONE2                    |
-| TR01       | ONE                     |
+| PT54       | ONE                     |
 | PT53       | Sport 1                 |
-| PT98       | Sport 2                 |
+| PT23       | Sport 2                 |
 | CH09       | Sport 3                 |
 | CH11       | Sport 4                 |
 | PT26       | Sport 5                 |
-| CH54       | Sport 5+                |
+| TV16       | Sport 5+                |
 | MU03       | Sport 5 Gold            |
 | PT62       | Sport 5 Live            |
 | CH56       | Sport 5 Stars           |
 | CH55       | Sport 5 4K              |
-| PT39       | EUROSPORT               |
+| PT39       | Eurosport               |
 | CH33       | Eurosport 2             |
-| PT22       | Sport 1 single (63)     |
+| PT22       | Sport 1 SD              |
 | TV87       | CBS Reality             |
 | PT12       | EGO                     |
 | CH85       | MUTV                    |
-| CH97       | Vacation Channel        |
 | TV34       | FTV                     |
 | CH62       | Style Channel           |
-| CHN2       | ONE DOCO                |
-| CHN3       | Sport Edge              |
-| PT31       | MTV Club (MTV Dance)    |
-| TV37       | MTV 00s (VH1)           |
-| TV51       | MTV 80s (VH1 Classic)   |
-| TV35       | MTV (MTV Music)         |
+| PT31       | Club MTV                |
+| TV37       | MTV 00s                 |
+| TV51       | MTV 80s                 |
+| TV35       | MTV                     |
 | PT50       | MTV Live                |
-| CH91       | MTV HITS                |
-| CH43       | TLC (78)                |
-| CN09       | Childhood songs         |
+| CH26       | TLC                     |
+| CH41       | Classica                |
 | CH57       | Kan Educational         |
 | TA02       | Baby                    |
-| TV24       | HOP                     |
-| PT46       | HOP! Childhood          |
+| TV24       | Hop!                    |
+| PT46       | Hop! Childhood          |
 | PT59       | Disney Junior           |
 | PT69       | NICK Junior             |
 | CH19       | Kids Stars Channel      |
 | YSA4       | yes Movies Kids         |
 | CH98       | ZOOM TOON               |
-| PT91       | Disney                  |
-| PT85       | ZOOM                    |
+| PT43       | Disney                  |
+| PT85       | Zoom                    |
 | NK01       | Nickelodeon             |
 | CH13       | WiZ                     |
 | TA05       | Junior                  |
-| CH18       | TeenNick                |
+| CH18       | Teennick                |
 | PT48       | JimJam                  |
-| CN08       | Childhood               |
 | PT30       | Hidabroot               |
 | TV43       | Kehilaty (98)           |
 | TV89       | Knesset                 |
 | TV12       | CNN                     |
 | TV42       | Sky News                |
-| PT18       | FRANCE 24               |
+| PT18       | France 24               |
 | TV13       | Fox News                |
 | TV59       | Bloomberg               |
-| CN05       | France 24 fr            |
-| PT17       | Al Jazeera English      |
+| CN05       | France 24 (FR)          |
+| PT17       | Al Jazeera (ENG)        |
 | TV02       | METV                    |
 | PT86       | Trace                   |
 | PT06       | CGTN                    |
-| CH50       | CGTN DOC                |
-| PT02       | Bollywood               |
-| CH68       | Bollyshow               |
-| PT14       | Health Channel          |
+| CH50       | CGTN Documentary        |
+| CH68       | BollyShow               |
 | TV44       | RTL                     |
 | TV46       | SAT 3                   |
 | TV45       | SAT 1                   |
 | TV79       | GTV                     |
 | TV49       | TVE                     |
-| PT11       | TVR i                   |
-| TV57       | PROTV                   |
-| TV98       | ZEETV                   |
+| PT11       | TVR International       |
+| TV57       | PROTV International     |
+| TV98       | ZEE TV                  |
 | PT64       | Mediaset                |
-| CH74       | FRANCE3                 |
-| TV94       | France 2 (F2)           |
+| CH74       | France 3                |
+| TV94       | France 2                |
 | TV47       | ARTE                    |
-| TV56       | EUROSTAR                |
+| TV56       | Eurostar                |
 | TV77       | RTM                     |
 | PT19       | IETV                    |
 | CH87       | ROTANA Cinema           |
 | TV71       | LBC                     |
 | TV73       | ROTANA                  |
 | TV76       | Al Jazeera              |
-| TV81       | Channel 1 Rus           |
-| TV82       | RTR                     |
+| TV81       | Channel 1 (RUS)         |
+| TV82       | RTR Planeta             |
 | CN03       | Dom Kino Premium        |
 | TV85       | NASHE KINO              |
 | CH24       | REN TV                  |
-| PT73       | VREMYA                  |
-| PT74       | TELECAFE                |
-| CH76       | Bober                   |
+| PT73       | Vremya                  |
+| PT74       | Telecafe                |
 | CH23       | Current Time            |
 | PT51       | CTC                     |
 | TV60       | NTV MIR                 |
 | PT45       | TVCI                    |
 | PT15       | 1+1                     |
 | PT36       | Dom Kino                |
-| CH79       | Music IL                |
-| CH27       | IDXTRA                  |
-| CH41       | Classica                |
+| CH27       | Investigation Discovery |
 | CH29       | SHANSON TV              |
 | TV65       | Russian MusicBox        |
 | PT61       | Carousel                |
-| PT78       | Disney Junior RUS       |
-| PT83       | JimJam RUS              |
+| PT78       | Disney Junior (RUS)     |
 | CH14       | Baby (RUS)              |
-| CN02       | Kan LL                  |
-| PT05       | Blue HUSTLER            |
+| PT05       | Blue Hustler            |
 
 ## Credits
 
