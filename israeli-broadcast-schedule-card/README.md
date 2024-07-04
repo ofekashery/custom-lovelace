@@ -51,10 +51,13 @@ resources:
 | YSA1       | yes Movies Drama        |
 | YSA2       | yes Movies Action       |
 | YSA3       | yes Movies Comedy       |
-| YSAU       | yes Israeli Cinema      |
+| YSAU       | yes Israeli             |
 | YESU       | yes TV Drama            |
 | YESV       | yes TV Action           |
 | YESP       | yes TV Comedy           |
+| YS19       | yes+ Cinema             |
+| YS20       | yes+ DIAMONDS           |
+| YESI       | yes POP UP              |
 | YSAT       | yes Docu                |
 | TV50       | Israel Plus             |
 | CH70       | Turkish Drama           |
@@ -93,13 +96,13 @@ resources:
 | TV61       | Animal Planet           |
 | PT13       | Daystar                 |
 | CH58       | ONE2                    |
-| PT54       | ONE                     |
+| TR01       | ONE                     |
 | PT53       | Sport 1                 |
 | PT23       | Sport 2                 |
 | CH09       | Sport 3                 |
 | CH11       | Sport 4                 |
 | PT26       | Sport 5                 |
-| TV16       | Sport 5+                |
+| CH54       | Sport 5+                |
 | MU03       | Sport 5 Gold            |
 | PT62       | Sport 5 Live            |
 | CH56       | Sport 5 Stars           |
